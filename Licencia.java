@@ -29,15 +29,12 @@ public class Licencia extends JFrame implements ActionListener, ChangeListener{
     textarea1.setEditable(false);
     textarea1.setFont(new Font("Andale Mono", 0, 9));   
     textarea1.setText("\n\n          TÉRMINOS Y CONDICIONES" +
-                    "\n\n            A.  PROHIBIDA SU VENTA O DISTRIBUCIÓN SIN AUTORIZACIÓN DE LA GEEKIPEDIA DE ERNESTO." +
+                    "\n\n            A.  PROHIBIDA SU VENTA O DISTRIBUCIÓN SIN AUTORIZACIÓN." +
                     "\n            B.  PROHIBIDA LA ALTERACIÓN DEL CÓDIGO FUENTE O DISEÑO DE LAS INTERFACES GRÁFICAS." +
-                    "\n            C.  LA GEEKIPEDIA DE ERNESTO NO SE HACE RESPONSABLE DEL MAL USO DE ESTE SOFTWARE." +
-                    "\n\n          LOS ACUERDOS LEGALES EXPUESTOS ACONTINUACIÓN RIGEN EL USO QUE USTED HAGA DE ESTE SOFTWARE" +
-                    "\n          (LA GEEKIPEDIA DE ERNESTO Y EL AUTOR ERNESTO), NO SE RESPONSABILIZAN DEL USO QUE USTED" + 
-                    "\n          HAGA CON ESTE SOFTWARE Y SUS SERVICIOS. PARA ACEPTAR ESTOS TERMINOS HAGA CLIC EN (ACEPTO)" +
-                    "\n          SI USTED NO ACEPTA ESTOS TERMINOS, HAGA CLIC EN (NO ACEPTO) Y NO UTILICE ESTE SOFTWARE." + 
-                    "\n\n          PARA MAYOR INFORMACIÓN SOBRE NUESTROS PRODUCTOS O SERVICIOS, POR FAVOR VISITE" + 
-                    "\n          http://www.youtube.com/ernestoperezm");
+                    "\n            C.  NO NOS HACEMOS RESPONSABLES DEL MAL USO DE ESTE SOFTWARE." +
+                    "\n\n          LOS ACUERDOS LEGALES EXPUESTOS ACONTINUACIÓN RIGEN EL USO QUE USTED HAGA DE ESTE SOFTWARE" +                   
+                    "\n          SI USTED NO ACEPTA ESTOS TERMINOS, HAGA CLIC EN (NO ACEPTO) Y NO UTILICE ESTE SOFTWARE." 
+                    );
     scrollpane1 = new JScrollPane(textarea1);
     scrollpane1.setBounds(10,40,575,200);
     add(scrollpane1);   
@@ -78,7 +75,7 @@ public class Licencia extends JFrame implements ActionListener, ChangeListener{
   public void actionPerformed(ActionEvent e){
     if(e.getSource() == boton1){
         Principal ventanaPrincipal = new Principal();
-        ventanaPrincipal.setBounds(0,0,640,535);
+        ventanaPrincipal.setBounds(0,0,640,545);
         ventanaPrincipal.setVisible(true);
         ventanaPrincipal.setResizable(false);
         ventanaPrincipal.setLocationRelativeTo(null);
@@ -95,7 +92,7 @@ public class Licencia extends JFrame implements ActionListener, ChangeListener{
 
   public static void main(String args[]){
    Licencia ventanalicencia = new Licencia();
-   ventanalicencia.setBounds(0,0,600,360);
+   ventanalicencia.setBounds(0,0,615,390);
    ventanalicencia.setVisible(true);
    ventanalicencia.setResizable(false);
    ventanalicencia.setLocationRelativeTo(null);

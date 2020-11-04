@@ -32,7 +32,7 @@ public class Bienvenida extends JFrame implements ActionListener{
     label3.setForeground(new Color(255,255,255));
     add(label3);
 
-    label4 = new JLabel("©2017 The Coca-Cola Company");
+    label4 = new JLabel("©2020 The Coca-Cola Company");
     label4.setBounds(85,375,300,30);
     label4.setFont(new Font("Andale Mono", 1, 12));
     label4.setForeground(new Color(255,255,255));
@@ -62,7 +62,7 @@ public class Bienvenida extends JFrame implements ActionListener{
          JOptionPane.showMessageDialog(null, "Debes ingresar tu nombre.");
        } else {
          Licencia ventanalicencia = new Licencia();
-         ventanalicencia.setBounds(0,0,600,360);
+         ventanalicencia.setBounds(0,0,615,390);
          ventanalicencia.setVisible(true);
          ventanalicencia.setResizable(false);
          ventanalicencia.setLocationRelativeTo(null);
